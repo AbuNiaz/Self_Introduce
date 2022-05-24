@@ -8,6 +8,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Abu Niaz Portfolio'),
+        elevation: 0,
       ),
       drawer: Drawer(
         child: ListView(
