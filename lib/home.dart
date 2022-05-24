@@ -10,6 +10,15 @@ class MyHomePage extends StatelessWidget {
         title: const Text('Abu Niaz Portfolio'),
         elevation: 0,
       ),
+      body: Center(
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: 40,
+            )
+          ],
+        ),
+      ),
       drawer: Drawer(
         child: ListView(
           children: const [DrawerHeader(child: Text('Edit profile'))],
