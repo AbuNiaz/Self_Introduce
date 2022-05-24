@@ -9,12 +9,16 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Abu Niaz Portfolio'),
         elevation: 0,
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+        ],
       ),
       body: Center(
         child: Column(
-          children: [
+          children: const [
             CircleAvatar(
-              radius: 40,
+              radius: 60,
+              backgroundImage: AssetImage('images/me.jpg'),
             )
           ],
         ),
