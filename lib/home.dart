@@ -17,25 +17,40 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: const [
+            SizedBox(
+              height: 30,
+            ),
             CircleAvatar(
               radius: 60,
               backgroundImage: AssetImage('images/me.jpg'),
+            ),
+            SizedBox(
+              height: 5,
             ),
             Text('ABU NIAZ',
                 style: TextStyle(
                     fontSize: 22,
                     color: Colors.black,
                     fontWeight: FontWeight.bold)),
+            SizedBox(
+              height: 5,
+            ),
             Text('ID: 193-35-507',
                 style: TextStyle(
                     fontSize: 18,
                     color: Colors.black,
                     fontWeight: FontWeight.bold)),
+            SizedBox(
+              height: 5,
+            ),
             Text('Dept. Of Software Engineering',
                 style: TextStyle(
                     fontSize: 18,
                     color: Colors.black,
                     fontWeight: FontWeight.bold)),
+            SizedBox(
+              height: 5,
+            ),
             Text('Daffodil international University',
                 style: TextStyle(
                     fontSize: 18,
