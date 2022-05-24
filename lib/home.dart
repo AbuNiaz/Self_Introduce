@@ -12,6 +12,7 @@ class MyHomePage extends StatelessWidget {
         actions: [
           IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
         ],
+        backgroundColor: Colors.teal,
       ),
       body: Center(
         child: Column(
@@ -19,13 +20,40 @@ class MyHomePage extends StatelessWidget {
             CircleAvatar(
               radius: 60,
               backgroundImage: AssetImage('images/me.jpg'),
-            )
+            ),
+            Text('ABU NIAZ',
+                style: TextStyle(
+                    fontSize: 22,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
+            Text('ID: 193-35-507',
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
+            Text('Dept. Of Software Engineering',
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
+            Text('Daffodil international University',
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
           ],
         ),
       ),
       drawer: Drawer(
         child: ListView(
-          children: const [DrawerHeader(child: Text('Edit profile'))],
+          children: const [
+            DrawerHeader(
+              child: Text(
+                'Edit profile',
+              ),
+              decoration: BoxDecoration(color: Colors.blue),
+            )
+          ],
         ),
       ),
     );
