@@ -22,7 +22,29 @@ class _MyHomePageState extends State<MyHomePage> {
             CircleAvatar(
               radius: 60,
               backgroundImage: AssetImage('images/me.jpg'),
-            )
+            ),
+            Text(
+              'Abu Niaz',
+              style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold),
+            ),
+            Text('ID : 193-35-507',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
+            Text('Dept. Of SoftWare Engineering',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
+            Text('Daffodil International University',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold)),
           ],
         ),
       ),
@@ -30,7 +52,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: const [
             DrawerHeader(
-              child: Text('Edit Profile'),
+              child: Text('Edit Profile',
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold)),
               decoration: BoxDecoration(color: Colors.pinkAccent),
             )
           ],
