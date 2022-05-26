@@ -15,6 +15,17 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('Abu Niaz Portfolio'),
         backgroundColor: Colors.teal,
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            CircleAvatar(
+              radius: 60,
+              backgroundImage: AssetImage('images/me.jpg'),
+            )
+          ],
+        ),
+      ),
       drawer: Drawer(
         child: ListView(
           children: const [
